@@ -1,0 +1,1187 @@
+﻿@model PaymentGateway.Models.PaymentViewModel.CardInfoViewModel
+@{
+    ViewBag.Title = "Payment";
+    Layout = null;
+}
+@*<script src="https://code.jquery.com/jquery-latest.js"></script>*@
+<script src="~/Scripts/jquery-2.1.3.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+
+    $(window).load(function () {
+
+        $(".dropdown-menu li a").click(function () {
+            $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+            $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+        });
+
+    });
+
+    //]]></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" id="bootstrap-css" />
+
+<style type="text/css">
+    html {
+        overflow-x: hidden;
+    }
+
+    body.modal-open {
+        padding: 0 !important;
+    }
+
+        body.modal-open .modal-backdrop.fade.in {
+            z-index: 0 !important;
+        }
+
+    header nav.navbar-inverse {
+        border-bottom: 1px solid hsla(0, 0%, 100%, .08);
+        background: #0071cf;
+        height: auto;
+        border-radius: 0;
+    }
+
+    header nav .navbar-brand {
+        height: auto !important;
+    }
+
+    .topHeading {
+        float: right;
+        font-size: 22px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: right;
+        margin: 22px 0;
+    }
+
+    .form-block h3 {
+        margin: 16px 0;
+        background: #dedede;
+        padding: 9px 15px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        font-size: 16px;
+        font-weight: normal;
+        color: #333333;
+    }
+
+
+
+    .AuthorizeNetPopupTop {
+        background: #f0f0f2;
+        margin: 0;
+        padding: 11px 0;
+        text-align: center;
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #d3d3d4;
+    }
+
+        .AuthorizeNetPopupTop .title {
+            text-align: center;
+        }
+
+            .AuthorizeNetPopupTop .title h1 {
+                font-size: 22px;
+                margin: 0;
+            }
+
+            .AuthorizeNetPopupTop .title h2 {
+                font-size: 18px;
+                margin: 7px 0 0 0;
+            }
+
+    .px-2 {
+        padding: 0 0.5rem;
+    }
+
+    .radioBox input[type=radio], .checBox input[type=checkbox] {
+        position: relative;
+        opacity: 0;
+    }
+
+        .radioBox input[type=radio] + span, .checBox input[type=checkbox] + span {
+            width: 22px;
+            height: 22px;
+            background: transparent;
+            display: block;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            position: relative;
+            top: -14px;
+        }
+
+        .checBox input[type=checkbox] + span {
+            border-radius: 4px;
+        }
+
+        .radioBox input[type=radio]:checked + span, .checBox input[type=checkbox]:checked + span {
+            background: #ffffff;
+            border-color: #337ab7;
+        }
+
+            .radioBox input[type=radio]:checked + span:after, .checBox input[type=checkbox]:checked + span:after {
+                content: '';
+                width: 10px;
+                height: 10px;
+                display: block;
+                background: #337ab7;
+                border-color: #337ab7;
+                border-radius: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+
+            .checBox input[type=checkbox]:checked + span:after {
+                border-radius: 3px;
+            }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #divAuthorizeNetPopupScreen {
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: #808080;
+        opacity: 0.5;
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+        filter: alpha(opacity=50);
+    }
+
+    #divAuthorizeNetPopup {
+    }
+
+    .AuthorizeNetPopupGrayFrameTheme .AuthorizeNetPopupOuter {
+        background-color: #f5f5f7;
+        padding: 0;
+        border-radius: 10px;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .AuthorizeNetPopupGrayFrameTheme .AuthorizeNetPopupClose a {
+        background-image: url('content/closeButton1.png');
+        background-repeat: no-repeat;
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+    }
+
+        .AuthorizeNetPopupGrayFrameTheme .AuthorizeNetPopupClose a:hover {
+            background-image: url('content/closeButton1h.png');
+        }
+
+        .AuthorizeNetPopupGrayFrameTheme .AuthorizeNetPopupClose a:active {
+            background-image: url('content/closeButton1a.png');
+        }
+
+    .AuthorizeNetPopupGrayFrameTheme .AuthorizeNetPopupInner {
+        background-color: #f5f5f7;
+        margin: 15px 10px 0 10px;
+    }
+
+    .AuthorizeNetPopupGrayFrameTheme .AuthorizeNetPopupBottom {
+        height: 30px;
+    }
+
+    .AuthorizeNetPopupGrayFrameTheme .AuthorizeNetPopupLogo {
+        position: absolute;
+        right: 9px;
+        bottom: 4px;
+        width: 200px;
+        height: 25px;
+        background-image: url('content/powered_simple.png');
+    }
+
+    .AuthorizeNetPopupSimpleTheme .AuthorizeNetPopupOuter {
+        border: 1px solid #585858;
+        background-color: #ffffff;
+    }
+
+    .modal-open .modal {
+        z-index: 99;
+    }
+
+        .modal-open .modal:after {
+            content: '';
+            position: fixed;
+            width: 100%;
+            background: rgb(0,0,0);
+            height: 100%;
+            top: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+    .page-loader {
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.66);
+    }
+
+        .page-loader .loader-content {
+            width: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    .loader-content .page-content img {
+        width: 100%;
+    }
+
+    .card-row {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .text-amount {
+        font-size: 25px;
+        padding: 20px 0;
+    }
+
+    .mb-3 {
+        margin-bottom: 1.25rem;
+    }
+
+    .card {
+        background: #e9e9e9;
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        padding: 13px 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-menu {
+        padding: 0;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .dropdown-menu > li > a {
+        display: block;
+        padding: 9px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+        margin: 0;
+        border-bottom: 1px solid #8c8c8c;
+        border-radius: 0;
+    }
+
+    .dropdown640 {
+        max-width: 100%;
+    }
+
+    .card label {
+        margin: 0;
+        display: flex;
+        position: relative;
+    }
+
+        .card label span {
+            top: 0 !important;
+        }
+
+    .btn-block + .dropdown-menu {
+        width: 100%;
+    }
+
+    .nav-tabs > li > span {
+        margin-right: 2px;
+        line-height: 1.42857143;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        padding-left: 0;
+    }
+
+    .tab-content {
+        padding-top: 15px;
+    }
+
+    .px-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .pl-0 {
+        padding-left: 0 !important;
+    }
+
+    [class^=col-] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .fntS12 {
+        font-size: 12px;
+    }
+
+    label.radioBox {
+        padding: 0 5px;
+    }
+
+    [disabled="disabled"] {
+        pointer-events: none;
+        color: rgb(175, 175, 175) !important;
+        background: rgb(231, 231, 231) !important;
+    }
+</style>
+@*<form method="post" action="https://test.authorize.net/payment/payment" id="formAuthorizeNetPopup" name="formAuthorizeNetPopup" target="iframeAuthorizeNet" style="display:none;">
+        @*<input type="hidden" id="popupToken" name="token" value="Replace with form token from getHostedPaymentPageResponse" />
+    </form>*@
+@*<input type="hidden" id="inputtoken" value="" />*@
+@*<header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="nav navbar-nav navbar-right">
+                    <div class="topHeading">Credit Card Payment</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br />*@
+@*<div class="container">
+        <div class="row card-row">
+            <div class="col-xs-12 col-md-4">
+                <button id="btnOpenAuthorizeNetPopup" class="btn btn-primary btn-lg btn-block" onclick="AuthorizeNetPopup.openPopup()">Pay</button>
+            </div>
+        </div>
+    </div>*@
+<div id="divAuthorizeNetPopup" class="AuthorizeNetPopupGrayFrameTheme">
+    <div class="AuthorizeNetPopupOuter">
+        <div class="page-loader">
+            <div class="loader-content">
+                <img src="~/content/loader.svg" />
+            </div>
+        </div>
+        @*<div class="AuthorizeNetPopupTop modal-header title">
+                @*<button type="button" class="close" data-dismiss="modal" onclick="AuthorizeNetPopup.closePopup();">×</button>
+                <h3 class="modal-title">Aturian Payment</h3>
+            </div>*@
+        <form action="@Url.Action("PaymentProcess", "Payment")" method="post">
+            <div class="AuthorizeNetPopupInner">
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <strong>Succuss!</strong> @TempData["Success"].ToString().
+                    </div>
+                }
+                @if (TempData["Error"] != null)
+                {
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12">
+                            <div class="col-xs-12 col-md-12 col-lg-12">
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+                                    <div class="alert alert-danger">
+                                        <button type="button" class="close" data-dismiss="alert">×</button>
+                                        <strong>Error!</strong> @TempData["Error"].ToString().
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="row">
+                    @*<form action="@Url.Action("CreateCust", "Payment")" method="post">*@
+                    @*<div class="col-xs-12 col-md-12 col-lg-12">
+                            @*<div class="col-xs-6 col-md-6 form-group">
+                                    <div class="col-xs-12 col-lg-12 pl-ziro">
+                                        <label for="expityMonth">
+                                            CustomerId
+                                        </label>
+                                        @Html.TextBoxFor(m => m.CustomerId, new { @class = "form-control" })
+                                        @*<input type="text" class="form-control" id="CustomerId">
+                                    </div>
+                                </div>
+
+                            <div class="col-xs-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-lg-12 pl-ziro">
+                                        <label for="expityMonth">
+                                            Customer Email
+                                        </label>
+                                        @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
+                                        @*<input type="text" class="form-control" id="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-12 col-lg-12 mb-3">
+                                <div class="col-xs-8 col-lg-12 pl-ziro">
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
+                                        </div>
+                                        @if (Model.customerProfile_Id == string.Empty)
+                                        {
+                                            <button class="btn btn-primary" name="PostType" type="submit" id="btncreateCust" value="CreateCustomer">Create Customer Profile</button>
+                                        }
+                                    </div>
+
+
+
+                                    @*<div class="pull-right">
+                                            <label>Customer Profile ID </label>
+                                            @*<label id="lblCustprofileId" class="text-success">@Model.customerProfile_Id</label>
+                                        </div>
+                                        @*<label id="lblCustemail"></label>
+                                </div>
+                            </div>
+                        </div>*@
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-md-12 col-lg-12">
+                            @*<div class="col-xs-12 col-md-12 col-lg-12">
+                                    <div class="form-block">
+                                        <h3>Invoice Details</h3>
+                                    </div>
+                                </div>*@
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-12">
+                        <div class="col-xs-6 col-md-6 form-group">
+                            <div class="col-xs-12 col-lg-12 px-0">
+                                @if (Model.docType.ToLower() == "invoice")
+                                {
+                                    <label for="expityMonth">
+                                        Invoice Number
+                                    </label>
+                                }
+                                else
+                                {
+                                    <label for="expityMonth">
+                                        Order Number
+                                    </label>
+                                }
+                                @Html.TextBoxFor(m => m.InvoiceNumber, new { @class = "form-control" })
+                                @*<input type="text" class="form-control">*@
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-6 form-group">
+                            <div class="col-xs-12 col-lg-12 pl-ziro px-0">
+                                <label for="expityMonth">
+                                    Amount $
+                                </label>
+                                @{var formated = String.Format("{0:0.00}", Model.Amount);}
+                                @Html.TextBoxFor(m => m.Amount, formated, new { @class = "form-control" })
+                                @*<input type="text" class="form-control" id="txtAmount">*@
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    @*<form action="@Url.Action("PaymentMethod", "Payment")" method="post">*@
+                    @*<div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class="form-block">
+                        <h3>
+                            Saved Card
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="pull-right">Add Payment Method</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
+
+
+
+                </div>
+            </div>
+        </div>*@
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-md-12 form-group">
+                            <ul class="nav nav-tabs" role="tablist">
+                                @if (Model.savecard.Count > 0)
+                                {
+                                    <li role="presentation"><a href="#savedCard" aria-controls="savedCard" role="tab" data-toggle="tab" onclick="tabClick('SC')" title="Saved Card"><img width="24" src="~/fonts/save_cc.svg" alt="saved Card" /></a></li>
+                                }
+                                else
+                                {
+                                    <li role="presentation"><a href="#savedCard" aria-controls="savedCard" role="tab" data-toggle="tab" disabled="disabled" title="Saved Card"><img width="24" src="~/fonts/save_cc.svg" alt="saved Card" /></a></li>
+                                }
+                                <li role="presentation" class="active"><a href="#creditCard" aria-controls="creditCard" role="tab" data-toggle="tab" onclick="tabClick('CC')" title="New Credit Card"><img width="24" src="~/fonts/cc.svg" alt="Credit Card" /></a></li>
+                                <li role="presentation"><a href="#eCheck" aria-controls="eCheck" role="tab" data-toggle="tab" title="E-Check" disabled="disabled"><img width="32" src="~/fonts/eft.svg" alt="E-Check" /></a></li>
+                                @*<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>*@
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane" id="savedCard">
+                                    @*Save Card*@
+                                    <div class="col-xs-6 col-md-6 pl-0" id="cardSave">
+
+                                        <div class="dropdown dropdown640">
+                                            <button class="text-left btn btn-primary dropdown-toggle btn-block" type="button" data-toggle="dropdown">
+                                                Select Card
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                @foreach (var item in Model.savecard)
+                                                {
+                                                    <li><a href="#" class="col-xs-12 col-md-12 col-lg-12 col-sm-12 card" onclick="SaveCardDetail('@item.customerPaymentProfileId')">@item.cardType @item.cardNumber</a> </li>
+
+                                                }
+
+                                            </ul>
+                                            <label class="text-danger" id="messSC"></label>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    @*Save Card*@
+                                </div>
+                                <div role="tabpanel" class="tab-pane active" id="creditCard">
+                                    @*credit Card*@
+                                    <div class="" id="cardDivid">
+                                        <div class="col-xs-6 col-md-6 form-group">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 col-lg-12  px-0">
+
+                                                    @Html.TextBoxFor(m => m.addnewcard.x_card_num, new { @class = "form-control", @maxlength = "16", @placeholder = "xxxx-xxxx-xxxx-xxxx" })
+                                                    <label class="text-danger" id="messCard"></label>
+                                                    @*<input type="text" class="form-control" size="16" maxlength="16" name="x_card_num" id="x_card_num">*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 col-md-3 form-group">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 col-lg-12 px-0">
+
+                                                    @Html.TextBoxFor(m => m.addnewcard.x_exp_code, new { @class = "form-control", @maxlength = "5", @placeholder = "MMYY" })
+                                                    <label class="text-danger" id="messExp"></label>
+                                                    @*<input type="text" class="form-control" id="x_exp_code">*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 col-md-3 form-group">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 col-lg-12 px-0">
+
+                                                    @Html.TextBoxFor(m => m.addnewcard.x_cvv_num, new { @class = "form-control", @placeholder = "CVV" })
+                                                    <label class="text-danger" id="messCVV"></label>
+                                                    @*<input type="text" class="form-control" id="x_cvv_num">*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-12 col-lg-12" id="divsavecheck">
+                                        <div class="col-xs-12 col-md-12 col-lg-12 px-0 form-group">
+                                            <div class="col-xs-12 col-lg-12 px-0">
+                                                <div class="">
+                                                    <label class="radioBox">
+                                                        @*@Html.CheckBoxFor(m => m.addnewcard.addPaycheck , new { @class = "form-control" })*@
+                                                        <input type="radio" id="saveCardPaycheck" name="addPay"> <span></span>
+                                                    </label>
+                                                    <label class="px-0 fntS12">Save this Card</label>
+                                                    <label class="radioBox">
+                                                        @*@Html.CheckBoxFor(m => m.addnewcard.addPaycheck , new { @class = "form-control" })*@
+                                                        <input type="radio" id="savePaycheck" name="addPay" checked="checked"> <span></span>
+                                                    </label>
+                                                    <label class="px-0 fntS12">Pay by this Card</label>
+                                                    <label class="radioBox">
+                                                        @*@Html.CheckBoxFor(m => m.addnewcard.addPaycheck , new { @class = "form-control" })*@
+                                                        <input type="radio" id="addPaycheck" name="addPay"> <span></span>
+                                                    </label>
+                                                    <label class="px-0 fntS12">Pay & Save by this Card</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @*credit Card*@
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="eCheck">
+                                    <div class="" id="bankDivid">
+                                        <div class="col-xs-6 col-md-6 form-group">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 col-lg-12 px-0">
+                                                    <label>Bank Name</label>
+                                                    @Html.TextBoxFor(m => m.addnewcard.x_bank_name, new { @class = "form-control", @maxlength = "15" })
+                                                    @*<input type="text" class="form-control" maxlength="15" size="15" id="x_bank_name">*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-6 form-group">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 col-lg-12 px-0">
+                                                    <label>
+                                                        Name On Account
+                                                    </label>
+                                                    @Html.TextBoxFor(m => m.addnewcard.x_name_on_account, new { @class = "form-control", @maxlength = "15" })
+                                                    @*<input type="text" class="form-control" maxlength="15" size="15" id="x_name_on_account">*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-6 form-group">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 col-lg-12 px-0">
+                                                    <label for="expityMonth">Account Number</label>
+                                                    @Html.TextBoxFor(m => m.addnewcard.x_name_account_num, new { @class = "form-control", @maxlength = "16" })
+                                                    @*<input type="text" class="form-control" maxlength="16" size="16" id="x_name_account_num">*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-6 form-group">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 col-lg-12 px-0">
+                                                    <label for="expityMonth">
+                                                        ABA Routing Number
+                                                    </label>
+                                                    @Html.TextBoxFor(m => m.addnewcard.x_aba_rout_num, new { @class = "form-control", @maxlength = "16" })
+                                                    @*<input type="text" class="form-control" maxlength="16" size="16" id="x_aba_rout_num">*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-6 form-group">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 col-lg-12 px-0">
+                                                    <label for="expityMonth">
+                                                        Bank Account Type
+                                                    </label>
+                                                    @Html.DropDownListFor(model => model.addnewcard.x_bank_type, new SelectList(
+                                                                  new List<Object>{
+                                                                       new { value = 0 , text = "Personal Checking"  },
+                                                                       new { value = 1 , text = "Personal Savings" },
+                                                                       new { value = 2 , text = "Business Checking"}
+                                                                    },
+                                                                  "value",
+                                                                  "text",
+                                                                   2), new { @class = "form-control" })
+                                                    @*<select type="text" class="form-control" id="x_bank_type">
+                                            <option value="0">Personal Checking</option>
+                                            <option value="1">Personal Savings</option>
+                                            <option value="2">Business Checking</option>
+                                        </select>*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @*<div role="tabpanel" class="tab-pane" id="settings">4</div>*@
+                            </div>
+                        </div>
+                    </div>
+                    @Html.HiddenFor(m => m.addnewcard.SaveCard)
+                    @*<div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class="form-block">
+                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                            <label class="radioBox px-2">
+
+                                <input type="radio" name="addnewcard.CCAddCard" class="cardRadio" id="addPayment_SaveCard" />
+                                <span></span>
+                            </label><label class="px-2">Saved card</label>
+                            <label class="radioBox px-2 radio-inline">
+
+                                <input id="addnewcard_CCAddCard" name="addnewcard.CCAddCard" type="radio" value="CC" checked="checked" />
+                                <span></span>
+                            </label>
+                            <label>New Card</label>
+                            <label class="radioBox px-2 radio-inline">
+
+                                <input type="radio" name="addnewcard.CCAddCard" id="addnewcard.BankAddCard" value="Bank" />
+                                <span></span>
+                            </label>
+                            <label>E-Check</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+                    @*<div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                    <div class="form-group">
+
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-md-12 col-lg-12">
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-md-12 col-lg-12">
+
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                            <div class="col-xs-12 col-lg-12">
+                                @*<hr />*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                            <div class="col-xs-12 col-lg-6 col-lg-offset-3">
+                                <input type="hidden" id="payvalue" value="0" />
+                                <button type="submit" class="btn btn-primary btn-block btn-lg" name="PostType" id="btnPay" value="Pay" onclick="return CheckPayment();">Pay</button>
+                                @*<button type="submit" class="btn btn-primary btn-block btn-lg" id="btnPay" value="Pay">Pay</button>*@
+                                <label style="color:green;" id="message" hidden></label>
+                            </div>
+                        </div>
+                    </div>
+                    @Html.HiddenFor(x => x.email)
+                    @Html.HiddenFor(x => x.customerProfile_Id)
+                    @Html.HiddenFor(x => x.ANET_ApiLoginID)
+                    @Html.HiddenFor(x => x.ANET_ApiTransactionKey)
+                    @Html.HiddenFor(x => x.Environment)
+                    @Html.HiddenFor(x => x.aTranId)
+                    @Html.HiddenFor(x => x.reqId)
+                    @Html.HiddenFor(x => x.taxAmount)
+                    @Html.HiddenFor(x => x.shipping)
+
+                    @*billing and shiping info*@
+                    @Html.HiddenFor(x => x.billingFName)
+                    @Html.HiddenFor(x => x.billingLName)
+                    @Html.HiddenFor(x => x.billingCompany)
+                    @Html.HiddenFor(x => x.billingAddrLine1)
+                    @Html.HiddenFor(x => x.billingAddressLine2)
+                    @Html.HiddenFor(x => x.billingCity)
+                    @Html.HiddenFor(x => x.billingState)
+                    @Html.HiddenFor(x => x.billingCountry)
+                    @Html.HiddenFor(x => x.billingZipCode)
+                    @Html.HiddenFor(x => x.billingPhno)
+                    @Html.HiddenFor(x => x.billingFax)
+                    @Html.HiddenFor(x => x.shippingFName)
+                    @Html.HiddenFor(x => x.shippingLName)
+                    @Html.HiddenFor(x => x.shippingCompany)
+                    @Html.HiddenFor(x => x.shippingAddrLine1)
+                    @Html.HiddenFor(x => x.shippingAddressLine2)
+                    @Html.HiddenFor(x => x.shippingCity)
+                    @Html.HiddenFor(x => x.shippingState)
+                    @Html.HiddenFor(x => x.shippingCountry)
+                    @Html.HiddenFor(x => x.shippingZipCode)
+                    @Html.HiddenFor(x => x.shippingPhno)
+                    @Html.HiddenFor(x => x.shippingFax)
+                    @*billing and shiping info*@
+
+                    @Html.HiddenFor(x => x.addnewcard.custumerCardId)
+                    @Html.HiddenFor(x => x.addnewcard.addPaycheck)
+                    @Html.HiddenFor(x => x.addnewcard.CCAddCard)
+                    @Html.HiddenFor(x => x.addnewcard.BankAddCard)
+                    @Html.HiddenFor(x => x.addnewcard.isCardSave)
+                    @*</form>*@
+                </div>
+                @*<iframe name="iframeAuthorizeNet" id="iframeAuthorizeNet" frameborder="0" scrolling="no" hidden></iframe>*@
+            </div>
+            <!-- Modal -->
+
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-md">
+                    <!-- Modal content-->
+                    @*<form action="@Url.Action("UpdateCust", "Payment")" method="post">*@
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h4 class="modal-title">Add Payment Profile</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+
+                                    <label class="radioBox px-2">
+                                        @*@Html.RadioButtonFor(m => m.addPayment.CCID, "", new { @class = "cardRadio" })*@
+                                        @*<input type="radio" name="AddcardCC" class="cardRadio" id="addPayment_CCID" checked />*@
+                                        <span></span>
+                                    </label><label class="px-2">Credit card</label>
+                                    @*</div><div class="col-md-6 col-sm-12">*@
+                                    @*<div class="pull-right">*@
+                                    <label class="radioBox px-2">
+                                        @*@Html.RadioButtonFor(m => m.addPayment.BAccount, "", new { @class = "cardRadio", @name = "AddcardCC" })*@
+                                        <input type="radio" name="AddcardCC" class="cardRadio" id="addPayment_BAccount">
+                                        <span></span>
+                                    </label><label class="px-2">E-Check</label>
+                                    @*</div>*@
+                                </div>
+                            </div>
+                            <div class="row" id="ccmodelDivid">
+                                <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                                            <label>Card Number</label><div class="input-group">
+                                                <div id="CreditCardNumber">
+                                                    @Html.TextBoxFor(m => m.addPayment.PayAdd_x_card_num, new { @class = "form-control", @maxlength = "16", @placeholder = "xxxx-xxxx-xxxx-xxx" })
+                                                    @*<input type="text" class="form-control" size="16" maxlength="16" name="PayAdd_x_card_num" id="PayAdd_x_card_num">*@
+                                                </div>
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                                            <label>Expiry Date(MMYY)</label>
+                                            @Html.TextBoxFor(m => m.addPayment.PayAdd_exp_code, new { @class = "form-control", @maxlength = "4", @placeholder = "MMYY" })
+                                            @*< input type="text" class="form-control" maxlength="5" size="5" id="PayAdd_exp_code">*@
+                                        </div>
+                                    </div>
+                                </div><div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                                            <label>CVV number</label>
+                                            @Html.TextBoxFor(m => m.addPayment.PayAdd_cvv_num, new { @class = "form-control", @maxlength = "3", @placeholder = "CVV" })
+                                            @*<input type="text" class="form-control" maxlength="3" size="3" id="PayAdd_cvv_num">*@
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="bankmodelDivid" hidden>
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                                            <label>Bank Name</label>
+                                            @Html.TextBoxFor(m => m.addPayment.PayAdd_bank_name, new { @class = "form-control", @maxlength = "15" })
+                                            @*<input type="text" class="form-control" maxlength="15" size="15" id="PayAdd_bank_name">*@
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                                            <label>
+                                                Name On Account
+                                            </label>
+                                            @Html.TextBoxFor(m => m.addPayment.PayAdd_name_on_acc, new { @class = "form-control", @maxlength = "15" })
+                                            @*<input type="text" class="form-control" maxlength="15" size="15" id="PayAdd_name_on_acc">*@
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                                            <label for="expityMonth">Account Number</label>
+                                            @Html.TextBoxFor(m => m.addPayment.PayAdd_account_num, new { @class = "form-control", @maxlength = "16" })
+                                            @*<input type="text" class="form-control" maxlength="16" size="16" id="PayAdd_account_num">*@
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                                            <label for="expityMonth">
+                                                ABA Routing Number
+                                            </label>
+                                            @Html.TextBoxFor(m => m.addPayment.ABA_Routing_num, new { @class = "form-control", @maxlength = "16" })
+                                            @*<input type="text" class="form-control" maxlength="16" size="16" id="ABA_Routing_num">*@
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                                            <label for="expityMonth">
+                                                Bank Account Type
+                                            </label>
+                                            @Html.DropDownListFor(model => model.addPayment.bank_account_type, new SelectList(
+                                              new List<Object>{
+                                                   new { value = 0 , text = "Personal Checking"  },
+                                                   new { value = 1 , text = "Personal Savings" },
+                                                   new { value = 2 , text = "Business Checking"}
+                                                },
+                                              "value",
+                                              "text",
+                                               2), new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @*@Html.HiddenFor(x => x.customerProfile_Id)*@
+                        @*@Html.HiddenFor(x => x.ANET_ApiLoginID)
+                            @Html.HiddenFor(x => x.ANET_ApiTransactionKey)*@
+                        <div class="modal-footer">
+                            @*@Html.HiddenFor(x => x.customerProfile_Id)*@
+                            <button type="submit" class="btn btn-primary" id="btnModelSave" name="PostType" value="CCSave" onclick="return checkCutomer();">Save</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    @*</form>*@
+                </div>
+            </div>
+        </form>
+        <div class="AuthorizeNetPopupBottom">
+            <div class="AuthorizeNetPopupLogo" title="Powered by Authorize.Net"></div>
+        </div>
+        <div id="divAuthorizeNetPopupScreen" style="display:none;"></div>
+    </div>
+</div>
+
+<script>
+
+    //$('#btnPay').click(function () {
+    //    $(".page-loader").show();
+    //});
+    $('#btncreateCust').click(function () {
+        $(".page-loader").show();
+    });
+    function checkCutomer() {
+        var isValid = false;
+        var custProfileId = '@Model.customerProfile_Id';
+        if (custProfileId != '')
+            isValid = true;
+
+
+        if (!isValid) {
+            alert('please create customer profile!!');
+        }
+        return isValid;
+    }
+    function CheckPayment() {
+        var isValid = true;
+        console.log(selectedTab);
+        if (selectedTab === "CC") {
+            //messCard, messExp, messCVV
+            if ($.trim($('#addnewcard_x_card_num').val()) === '') {
+                isValid = false;
+                $('#messCard').text('Please enter card number.');
+            }
+            if ($.trim($('#addnewcard_x_exp_code').val()) === '') {
+                isValid = false;
+                $('#messExp').text('Please expiry date.');
+            }
+            if ($.trim($('#addnewcard_x_cvv_num').val()) === '') {
+                isValid = false;
+                $('#messCVV').text('Please enter CVV.');
+            }
+        }
+        else if (selectedTab == "SC") {
+            if ($('#addnewcard_custumerCardId').val() === '') {
+                isValid = false;
+                $('#messSC').text('Please select atleast one card.');
+            }
+        }
+        alert(isValid)
+        if (isValid) {
+            $(".page-loader").show();
+        }
+        return isValid;
+    }
+    //(function () {
+    //    if (!window.AuthorizeNetPopup) window.AuthorizeNetPopup = {};
+    //    if (!AuthorizeNetPopup.options) AuthorizeNetPopup.options = {
+    //        onPopupClosed: null
+    //    };
+
+    //    AuthorizeNetPopup.closePopup = function () {
+    //        document.getElementById("divAuthorizeNetPopupScreen").style.display = "none";
+    //        document.getElementById("divAuthorizeNetPopup").style.display = "none";
+    //        //document.getElementById("iframeAuthorizeNet").src = "empty.html";
+    //        document.getElementById("btnOpenAuthorizeNetPopup").disabled = false;
+    //        if (AuthorizeNetPopup.options.onPopupClosed) AuthorizeNetPopup.options.onPopupClosed();
+    //    };
+
+
+    //    //AuthorizeNetPopup.openPopup = function () {
+
+    $('#saveCardPaycheck').click(function () {
+        if ($('#saveCardPaycheck').is(':checked')) {
+            $('#addnewcard_addPaycheck').val(false);
+            $('#addnewcard_isCardSave').val(true);
+            $('#btnPay').text('Save');
+        }
+    });
+    $('#savePaycheck').click(function () {
+        if ($('#savePaycheck').is(':checked')) {
+            $('#addnewcard_addPaycheck').val(false);
+            $('#addnewcard_isCardSave').val(false);
+            $('#btnPay').text('Pay');
+        }
+    });
+    $('#addPaycheck').click(function () {
+        if ($('#addPaycheck').is(':checked')) {
+            //alert('true');
+            $('#addnewcard_addPaycheck').val(true);
+            $('#addnewcard_isCardSave').val(false);
+            $('#btnPay').text('Pay');
+            //console.log('check',$('#addnewcard_addPaycheck').val());
+        }
+        //else {
+        //    //alert('false');
+        //    $('#addnewcard_addPaycheck').val(false);
+        //    console.log('check', $('#addnewcard_addPaycheck').val());
+        //}
+
+    });
+    $(document).ready(function () {
+        $("#addnewcard_CCAddCard").val(true);
+
+    });
+
+    //    AuthorizeNetPopup.onReceiveCommunication = function (querystr) {
+    //        console.log("onReceiveCommunication");
+    //        console.log(querystr);
+    //        var params = parseQueryString(querystr);
+    //        switch (params["action"]) {
+    //            case "successfulSave":
+    //                AuthorizeNetPopup.closePopup();
+    //                break;
+    //            case "cancel":
+    //                AuthorizeNetPopup.closePopup();
+    //                break;
+    //            case "transactResponse":
+    //                var response = params["response"];
+    //                document.getElementById("token").value = response;
+    //                AuthorizeNetPopup.closePopup();
+    //                break;
+    //            case "resizeWindow":
+    //                var w = parseInt(params["width"]);
+    //                var h = parseInt(params["height"]);
+    //                var ifrm = document.getElementById("iframeAuthorizeNet");
+    //                ifrm.style.width = w.toString() + "px";
+    //                ifrm.style.height = h.toString() + "px";
+    centerPopup();
+    //                break;
+    //        }
+    //    };
+
+
+    function centerPopup() {
+        var d = document.getElementById("divAuthorizeNetPopup");
+        d.style.left = "50%";
+        d.style.top = "50%";
+        var left = -Math.floor(d.clientWidth / 2);
+        var top = -Math.floor(d.clientHeight / 2);
+        d.style.marginLeft = left.toString() + "px";
+        d.style.marginTop = top.toString() + "px";
+        d.style.zIndex = "2";
+        if (d.offsetLeft < 16) {
+            d.style.left = "16px";
+            d.style.marginLeft = "0px";
+        }
+        if (d.offsetTop < 16) {
+            d.style.top = "16px";
+            d.style.marginTop = "0px";
+        }
+    }
+
+    //    function parseQueryString(str) {
+    //        var vars = [];
+    //        var arr = str.split('&');
+    //        var pair;
+    //        for (var i = 0; i < arr.length; i++) {
+    //            pair = arr[i].split('=');
+    //            vars.push(pair[0]);
+    //            vars[pair[0]] = unescape(pair[1]);
+    //        }
+    //        return vars;
+    //    }
+    //}());
+
+    //---------------------------------- code level script -----------------------------//
+    $(document).ready(function () {
+        $(".page-loader").hide();
+    });
+    //
+    var selectedTab = "CC";
+    function tabClick(ev) {
+        selectedTab = ev;
+        if (ev === 'CC') {
+
+            $('#addnewcard_SaveCard').val(false);
+            $("#addnewcard_CCAddCard").val(true);
+        }
+        else if (ev === 'SC') {
+            $('#addnewcard_SaveCard').val(true);
+            $("#addnewcard_CCAddCard").val(false);
+        }
+        else if(ev === 'EC') {
+            $('#addnewcard_SaveCard').val(false);
+            $("#addnewcard_CCAddCard").val(false);
+        }
+
+
+    }
+
+    function SaveCardDetail(val) {
+
+        $('#addnewcard_custumerCardId').val(val);
+    }
+    $('#addPayment_SaveCard').click(function () {
+        $("#bankDivid").hide();
+        $("#cardDivid").hide();
+        $("#divsavecheck").hide();
+        $('#cardSave').show();
+        $('#addnewcard_SaveCard').val(true);
+        $("#addnewcard_CCAddCard").val(false);
+        $('#addnewcard_addPaycheck').val(false);
+
+        //$("#addnewcard_CCAddCard").val(true);
+    });
+    $("#addnewcard_CCAddCard").click(function () {
+        $("#bankDivid").hide();
+        $("#cardDivid").show();
+        $("#divsavecheck").show();
+        $('#cardSave').hide();
+        $("#addnewcard_CCAddCard").val(true);
+        $('#addnewcard_SaveCard').val(false);
+        $('#savePaycheck').prop('checked', 'checked');
+        $('#addnewcard_addPaycheck').val(false);
+
+    });
+    $("#addnewcard_BankAddCard").click(function () {
+        $("#cardDivid").hide();
+        $("#bankDivid").show();
+        $("#divsavecheck").show();
+        $("#addnewcard_BankAddCard").val(true);
+        $("#addnewcard_CCAddCard").val(false);
+        $('#addnewcard_SaveCard').val(false);
+    });
+    $("#addPayment_CCID").click(function () {
+        $("#bankmodelDivid").hide();
+        $("#ccmodelDivid").show();
+        $("#addPayment_CCID").val(true);
+    });
+    $("#addPayment_BAccount").click(function () {
+        $("#ccmodelDivid").hide();
+        $("#bankmodelDivid").show();
+        $("#addPayment_BAccount").val(true);
+    });
+    //$('input[type=radio][name=card]:checked').click(function () {
+    //    alert($('input[type=radio][name=card]:checked').attr('value'));
+    //});
+    if ($('input:radio[name=card]:checked').val() == "CCAddCard") {
+        alert($('input:radio[name=card]:checked').val());
+        //$('#select-table > .roomNumber').attr('enabled',false);
+    }
+</script>

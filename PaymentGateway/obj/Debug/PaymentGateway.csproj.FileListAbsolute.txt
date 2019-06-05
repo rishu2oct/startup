@@ -1,0 +1,305 @@
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\PaymentGateway.dll.config
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\PaymentGateway.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\PaymentGateway.pdb
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\csc.exe
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\csc.exe.config
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\csc.rsp
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\csi.exe
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\csi.exe.config
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\csi.rsp
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.Managed.Core.targets
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.AppContext.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Collections.Immutable.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Console.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.Compression.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.FileSystem.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.Pipes.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Reflection.Metadata.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.AccessControl.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Claims.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Principal.Windows.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.ValueTuple.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.XmlDocument.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.XPath.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\vbc.exe
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\vbc.exe.config
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\vbc.rsp
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\VBCSCompiler.exe
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\roslyn\VBCSCompiler.exe.config
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\Antlr3.Runtime.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\Microsoft.Web.Infrastructure.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\Newtonsoft.Json.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Diagnostics.DiagnosticSource.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Net.Http.Formatting.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Helpers.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Http.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Http.WebHost.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Mvc.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Optimization.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Razor.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Deployment.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Razor.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\WebGrease.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\Newtonsoft.Json.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Net.Http.Formatting.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Helpers.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Http.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Http.WebHost.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Mvc.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Optimization.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.Razor.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Deployment.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Razor.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\Antlr3.Runtime.pdb
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\System.Diagnostics.DiagnosticSource.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\AtulProj\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csprojAssemblyReference.cache
+D:\AtulProj\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csproj.CoreCompileInputs.cache
+D:\AtulProj\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csproj.CopyComplete
+D:\AtulProj\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.pdb
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\AuthorizeNet.dll
+D:\AtulProj\PaymentGateway\PaymentGateway\bin\AuthorizeNet.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\PaymentGateway.dll.config
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\PaymentGateway.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\PaymentGateway.pdb
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\csc.exe
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\csc.exe.config
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\csc.rsp
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\csi.exe
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\csi.exe.config
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\csi.rsp
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.AppContext.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Collections.Immutable.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Console.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.Compression.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.FileSystem.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.Pipes.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Reflection.Metadata.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.AccessControl.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Claims.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.ValueTuple.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.XPath.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\vbc.exe
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\vbc.exe.config
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\vbc.rsp
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\VBCSCompiler.exe
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\roslyn\VBCSCompiler.exe.config
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\Antlr3.Runtime.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\AuthorizeNet.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\Microsoft.Web.Infrastructure.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\Newtonsoft.Json.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Net.Http.Formatting.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Helpers.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Http.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Http.WebHost.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Mvc.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Optimization.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Razor.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Deployment.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Razor.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\WebGrease.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\AuthorizeNet.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\Newtonsoft.Json.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Net.Http.Formatting.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Helpers.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Http.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Http.WebHost.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Mvc.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Optimization.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.Razor.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Deployment.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Razor.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\Antlr3.Runtime.pdb
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csproj.CoreCompileInputs.cache
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csproj.CopyComplete
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.dll
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.pdb
+E:\Aturian payment gateway\14May2019\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csprojAssemblyReference.cache
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\PaymentGateway.dll.config
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\PaymentGateway.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\PaymentGateway.pdb
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\csc.exe
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\csc.exe.config
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\csc.rsp
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\csi.exe
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\csi.exe.config
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\csi.rsp
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.AppContext.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Collections.Immutable.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Console.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.Compression.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.FileSystem.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.IO.Pipes.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Reflection.Metadata.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.AccessControl.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Claims.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.ValueTuple.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.XPath.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\vbc.exe
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\vbc.exe.config
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\vbc.rsp
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\VBCSCompiler.exe
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\roslyn\VBCSCompiler.exe.config
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\Antlr3.Runtime.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\AuthorizeNet.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\Microsoft.Web.Infrastructure.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\Newtonsoft.Json.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Net.Http.Formatting.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Helpers.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Http.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Http.WebHost.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Mvc.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Optimization.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Razor.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Deployment.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Razor.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\WebGrease.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\AuthorizeNet.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\Newtonsoft.Json.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Net.Http.Formatting.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Helpers.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Http.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Http.WebHost.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Mvc.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Optimization.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.Razor.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Deployment.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Web.WebPages.Razor.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\Antlr3.Runtime.pdb
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csproj.CoreCompileInputs.cache
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csproj.CopyComplete
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.dll
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.pdb
+E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csprojAssemblyReference.cache
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\PaymentGateway.dll.config
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\PaymentGateway.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\PaymentGateway.pdb
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\Antlr3.Runtime.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\AuthorizeNet.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\Microsoft.Web.Infrastructure.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\Newtonsoft.Json.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Diagnostics.DiagnosticSource.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Net.Http.Formatting.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Helpers.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Http.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Http.WebHost.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Mvc.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Optimization.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Razor.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.WebPages.Deployment.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.WebPages.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.WebPages.Razor.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\WebGrease.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\AuthorizeNet.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\Newtonsoft.Json.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Net.Http.Formatting.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Helpers.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Http.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Http.WebHost.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Mvc.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Optimization.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.Razor.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.WebPages.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.WebPages.Deployment.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Web.WebPages.Razor.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\Antlr3.Runtime.pdb
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\System.Diagnostics.DiagnosticSource.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\obj\Debug\PaymentGateway.csproj.CoreCompileInputs.cache
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\obj\Debug\PaymentGateway.csproj.CopyComplete
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\obj\Debug\PaymentGateway.dll
+E:\RishabhWorkspace\Aturian-PaymentIntegartion-Git\PaymentGateway\obj\Debug\PaymentGateway.pdb

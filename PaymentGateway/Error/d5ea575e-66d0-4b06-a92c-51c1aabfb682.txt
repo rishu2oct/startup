@@ -1,0 +1,1 @@
+A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The specified network name is no longer available.)

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Payment</title>
+    <script type="text/javascript">
+    function myfunc ()
+    {
+    var frm = document.all("form2");
+    frm.submit();
+    }
+    window.onload = myfunc;
+    </script>
+</head>
+<body>
+    <form id="form2" method="post" action="https://www.billdesk.com/pgidsk/pgijsp/MerchantPaymentoption.jsp" name="form2">
+        <input type="hidden" name="MerchantID" value="ABCD" />
+        <input type="hidden" name="CustomerID" value="ARP10234" />
+        <input type="hidden" name="TxnAmount" value="94.00" />
+        <input type="hidden" name="CurrencyType" value="INR" />
+        <input type="hidden" name="TypeField1" value="R" />
+        <input type="hidden" name="SecurityID" value="abcd" />
+        <input type="hidden" name="TypeField2" value="F" /> 
+        <input type="hidden" name="RU" value="http://www.domain.com/response.jsp" />
+    </form>
+</body>
+</html>
