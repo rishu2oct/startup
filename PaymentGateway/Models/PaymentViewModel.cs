@@ -67,8 +67,7 @@ namespace PaymentGateway.Models
 
             public double taxAmount { get; set; }
             public double shipping { get; set; }
-            public double serviceChargePercentage { get; set; }
-            public int paymentOption { get; set; }
+
             public string docType { get; set; }
             public string customerPaymentProfileId { get; set; }
 

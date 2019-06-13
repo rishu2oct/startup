@@ -256,11 +256,9 @@
         font-size: 25px;
         padding: 20px 0;
     }
-
     .mb-2 {
         padding-left: 7px;
     }
-
     .mb-3 {
         margin-bottom: 1.25rem;
     }
@@ -327,13 +325,11 @@
         padding: 10px 15px;
         padding-left: 0;
     }
-
     .nav > li > a {
         position: relative;
         display: block;
         padding: 10px 15px;
     }
-
     .tab-content {
         padding-top: 15px;
     }
@@ -365,11 +361,9 @@
         color: rgb(175, 175, 175) !important;
         background: rgb(231, 231, 231) !important;
     }
-
     .mb-2 {
-        margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
     }
-
     .fixedbtn .contentDiv {
         background: #55595d;
         position: fixed;
@@ -535,53 +529,33 @@
                 <div class="row">
                     @*<form action="@Url.Action("PaymentMethod", "Payment")" method="post">*@
                     @*<div class="col-xs-12 col-md-12 col-lg-12">
-                            <div class="col-xs-12 col-md-12 col-lg-12">
-                                <div class="col-xs-12 col-md-12 col-lg-12">
-                                    <div class="form-block">
-                                        <h3>
-                                            Saved Card
-                                            <a href="#" data-toggle="modal" data-target="#myModal" class="pull-right">Add Payment Method</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class="form-block">
+                        <h3>
+                            Saved Card
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="pull-right">Add Payment Method</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
 
 
 
-                                </div>
-                            </div>
-                        </div>*@
+                </div>
+            </div>
+        </div>*@
                     <div class="col-xs-12 col-md-12 col-lg-12">
                         <div class="col-xs-12 col-md-12 form-group">
                             <ul class="nav nav-tabs" role="tablist">
-                                @{
-                                    if (Model.paymentOption == 1)
-                                    {
-                                        <li role="presentation" class="active"><a class="text-center" href="#eCheck" aria-controls="eCheck" role="tab" data-toggle="tab" title="E-Check" onclick="tabClick('EC')"><img class="mb-2" height="24" src="~/fonts/eft.svg" alt="E-Check" /><span class="h6 mb-2">E-Check</span></a></li>
-                                    }
-                                    else if (Model.paymentOption == 2)
-                                    {
-                                        if (Model.savecard.Count > 0)
-                                        {
-                                            <li role="presentation"><a class="text-center" href="#savedCard" aria-controls="savedCard" role="tab" data-toggle="tab" onclick="tabClick('SC')"><img class="mb-2" height="24" src="~/fonts/save_cc.svg" alt="saved Card" /><span class="h6 mb-2">Saved Cards</span></a></li>
-                                        }
-
-                                        <li role="presentation" class="active"><a class="text-center" href="#creditCard" aria-controls="creditCard" role="tab" data-toggle="tab" onclick="tabClick('CC')" title="New Credit Card"><img class="mb-2" height="24" src="~/fonts/cc.svg" alt="Credit Card" /><span class="h6 mb-2">New Card</span></a></li>
-                                    }
-                                    else
-                                    {
-                                        if (Model.savecard.Count > 0)
-                                        {
-                                            <li role="presentation"><a class="text-center" href="#savedCard" aria-controls="savedCard" role="tab" data-toggle="tab" onclick="tabClick('SC')"><img class="mb-2" height="24" src="~/fonts/save_cc.svg" alt="saved Card" /><span class="h6 mb-2">Saved Cards</span></a></li>
-                                        }
-
-                                        <li role="presentation" class="active"><a class="text-center" href="#creditCard" aria-controls="creditCard" role="tab" data-toggle="tab" onclick="tabClick('CC')" title="New Credit Card"><img class="mb-2" height="24" src="~/fonts/cc.svg" alt="Credit Card" /><span class="h6 mb-2">New Card</span></a></li>
-                                        <li role="presentation"><a class="text-center" href="#eCheck" aria-controls="eCheck" role="tab" data-toggle="tab" title="E-Check" onclick="tabClick('EC')"><img class="mb-2" height="24" src="~/fonts/eft.svg" alt="E-Check" /><span class="h6 mb-2">E-Check</span></a></li>
-                                    }
+                                @if (Model.savecard.Count > 0)
+                                {
+                                    <li role="presentation"><a class="text-center" href="#savedCard" aria-controls="savedCard" role="tab" data-toggle="tab" onclick="tabClick('SC')"><img class="mb-2" height="24" src="~/fonts/save_cc.svg" alt="saved Card" /><span class="h6 mb-2">Saved Cards</span></a></li>
                                 }
-
-
-                                }
+                               
+                                <li role="presentation" class="active"><a class="text-center" href="#creditCard" aria-controls="creditCard" role="tab" data-toggle="tab" onclick="tabClick('CC')" title="New Credit Card"><img class="mb-2" height="24" src="~/fonts/cc.svg" alt="Credit Card" /><span class="h6 mb-2">New Card</span></a></li>
+                                <li role="presentation"><a class="text-center" href="#eCheck" aria-controls="eCheck" role="tab" data-toggle="tab" title="E-Check" onclick="tabClick('EC')"><img class="mb-2" height="24" src="~/fonts/eft.svg" alt="E-Check" /><span class="h6 mb-2">E-Check</span></a></li>
+                                
                             </ul>
 
                             <!-- Tab panes -->
@@ -729,10 +703,10 @@
                                                                   "text",
                                                                    2), new { @class = "form-control" })
                                                     @*<select type="text" class="form-control" id="x_bank_type">
-                                                            <option value="0">Personal Checking</option>
-                                                            <option value="1">Personal Savings</option>
-                                                            <option value="2">Business Checking</option>
-                                                        </select>*@
+                                            <option value="0">Personal Checking</option>
+                                            <option value="1">Personal Savings</option>
+                                            <option value="2">Business Checking</option>
+                                        </select>*@
                                                 </div>
                                             </div>
                                         </div>
@@ -744,70 +718,70 @@
                     </div>
                     @Html.HiddenFor(m => m.addnewcard.SaveCard)
                     @*<div class="col-xs-12 col-md-12 col-lg-12">
-                            <div class="col-xs-12 col-md-12 col-lg-12">
-                                <div class="col-xs-12 col-md-12 col-lg-12">
-                                    <div class="form-block">
-                                        <div class="col-xs-12 col-lg-12 pl-ziro">
-                                            <label class="radioBox px-2">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class="form-block">
+                        <div class="col-xs-12 col-lg-12 pl-ziro">
+                            <label class="radioBox px-2">
 
-                                                <input type="radio" name="addnewcard.CCAddCard" class="cardRadio" id="addPayment_SaveCard" />
-                                                <span></span>
-                                            </label><label class="px-2">Saved card</label>
-                                            <label class="radioBox px-2 radio-inline">
+                                <input type="radio" name="addnewcard.CCAddCard" class="cardRadio" id="addPayment_SaveCard" />
+                                <span></span>
+                            </label><label class="px-2">Saved card</label>
+                            <label class="radioBox px-2 radio-inline">
 
-                                                <input id="addnewcard_CCAddCard" name="addnewcard.CCAddCard" type="radio" value="CC" checked="checked" />
-                                                <span></span>
-                                            </label>
-                                            <label>New Card</label>
-                                            <label class="radioBox px-2 radio-inline">
+                                <input id="addnewcard_CCAddCard" name="addnewcard.CCAddCard" type="radio" value="CC" checked="checked" />
+                                <span></span>
+                            </label>
+                            <label>New Card</label>
+                            <label class="radioBox px-2 radio-inline">
 
-                                                <input type="radio" name="addnewcard.CCAddCard" id="addnewcard.BankAddCard" value="Bank" />
-                                                <span></span>
-                                            </label>
-                                            <label>E-Check</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>*@
-                    @*<div class="col-xs-12 col-md-12 col-lg-12">
-                            <div class="col-xs-12 col-md-12 col-lg-12">
-                                <div class="col-xs-12 col-md-12 col-lg-12 form-group">
-                                    <div class="form-group">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>*@
-
-                    @*<div class="col-xs-12 col-md-12 col-lg-12">
-                            <div class="col-xs-12 col-md-12 col-lg-12">
-
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-12 col-lg-12">
-                            <div class="col-xs-12 col-md-12 col-lg-12">
-
-
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-12 col-lg-12">
-                            <div class="col-xs-12 col-md-12 col-lg-12 form-group">
-                                <div class="col-xs-12 col-lg-12">
-                                   <hr />
-                                </div>
-                            </div>
-                        </div>*@
-                    @*<div class="col-xs-12 col-md-12 col-lg-12">*@
-                    <div class="col-xs-12 col-md-12 col-lg-12 form-group">
-                        <div class="fixedbtn col-xs-12 col-lg-6 col-lg-offset-3">
-                            <div class="contentDiv"></div>
-                            <input type="hidden" id="payvalue" value="0" />
-                            <button type="submit" class="btn btn-primary btn-sm" name="PostType" id="btnPay" value="Pay" onclick="return CheckPayment();">Pay</button>
-                            @*<button type="submit" class="btn btn-primary btn-block btn-lg" id="btnPay" value="Pay">Pay</button>*@
-                            <label style="color:green;" id="message" hidden></label>
+                                <input type="radio" name="addnewcard.CCAddCard" id="addnewcard.BankAddCard" value="Bank" />
+                                <span></span>
+                            </label>
+                            <label>E-Check</label>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>*@
+                    @*<div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                    <div class="form-group">
+
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+                    @*<div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-md-12 col-lg-12">
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-md-12 col-lg-12">
+
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                            <div class="col-xs-12 col-lg-12">
+                               <hr />
+                            </div>
+                        </div>
+                    </div>*@
+                    @*<div class="col-xs-12 col-md-12 col-lg-12">*@
+                        <div class="col-xs-12 col-md-12 col-lg-12 form-group">
+                            <div class="fixedbtn col-xs-12 col-lg-6 col-lg-offset-3">
+                                <div class="contentDiv"></div>
+                                <input type="hidden" id="payvalue" value="0" />
+                                <button type="submit" class="btn btn-primary btn-sm" name="PostType" id="btnPay" value="Pay" onclick="return CheckPayment();">Pay</button>
+                                @*<button type="submit" class="btn btn-primary btn-block btn-lg" id="btnPay" value="Pay">Pay</button>*@
+                                <label style="color:green;" id="message" hidden></label>
+                            </div>
+                        </div>
                     @*</div>*@
                     @Html.HiddenFor(x => x.email)
                     @Html.HiddenFor(x => x.customerProfile_Id)
@@ -1040,7 +1014,7 @@
                 $('#messSC').text('Please select atleast one card.');
             }
         }
-
+       
         if (isValid) {
             $(".page-loader").show();
         }
@@ -1180,7 +1154,7 @@
             $('#addnewcard_SaveCard').val(false);
             $("#addnewcard_CCAddCard").val(false);
             $("#addnewcard_BankAddCard").val(true);
-
+            
         }
 
 

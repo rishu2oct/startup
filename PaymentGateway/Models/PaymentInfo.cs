@@ -54,8 +54,8 @@ namespace PaymentGateway.Models
         public string shippingZipCode { get; set; }
         public string shippingPhno { get; set; }
         public string shippingFax { get; set; }
-        public double serviceChargePercentage { get; set; }
-        public int paymentOption { get; set; }
+
+
         public static int SaveRequest(PaymentInfo objInfo)
         {
             DbProvider _db = new DbProvider();
