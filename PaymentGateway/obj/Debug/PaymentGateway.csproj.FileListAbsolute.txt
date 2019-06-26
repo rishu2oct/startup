@@ -261,4 +261,3 @@ E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.cs
 E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csproj.CopyComplete
 E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.dll
 E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.pdb
-E:\Aturian Payment New\PaymentGateway\PaymentGateway\obj\Debug\PaymentGateway.csprojAssemblyReference.cache

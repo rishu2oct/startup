@@ -4,9 +4,8 @@ E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\Microsoft.
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\PaymentgatwayUnitTest.dll.config
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\PaymentgatwayUnitTest.dll
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\PaymentgatwayUnitTest.pdb
-E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
-E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\nunit.framework.dll
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\PaymentGateway.dll
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\System.Web.Helpers.dll
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\System.Web.Mvc.dll
@@ -22,8 +21,8 @@ E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\Newtonsoft
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\System.Web.Http.WebHost.dll
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\PaymentGateway.pdb
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\PaymentGateway.dll.config
-E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
-E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\nunit.framework.pdb
+E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\nunit.framework.xml
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\System.Web.Helpers.xml
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\System.Web.Mvc.xml
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\System.Web.Razor.xml
@@ -41,3 +40,7 @@ E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\obj\Debug\Paymentgat
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\obj\Debug\PaymentgatwayUnitTest.csproj.CopyComplete
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\obj\Debug\PaymentgatwayUnitTest.dll
 E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\obj\Debug\PaymentgatwayUnitTest.pdb
+E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\NUnit3.TestAdapter.dll
+E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\NUnit3.TestAdapter.pdb
+E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\nunit.engine.dll
+E:\Aturian Payment New\PaymentGateway\PaymentgatwayUnitTest\bin\Debug\nunit.engine.api.dll
