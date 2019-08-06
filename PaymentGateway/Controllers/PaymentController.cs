@@ -26,7 +26,7 @@ namespace PaymentGateway.Controllers
         PaymentHelper _helper = new PaymentHelper();
 		
 		
-        // GET: Payment
+        // GET: Payment method
 
         public ActionResult Payment(string aTranId, string CusProfilId = "")
         {
