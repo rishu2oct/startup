@@ -14,7 +14,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Mvc;
-using static PaymentGateway.Models.PaymentViewModel;
+using static PaymentGateway.Models.PaymentViewModel
 using PaymentGateway.Helper;
 using System.Threading.Tasks;
 
