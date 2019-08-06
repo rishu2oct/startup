@@ -24,7 +24,7 @@ namespace PaymentGateway.Controllers
     {
 
         PaymentHelper _helper = new PaymentHelper();
-		//check pipeline by git
+		//check pipeline git commit
         // GET: Payment
 
         public ActionResult Payment(string aTranId, string CusProfilId = "")
